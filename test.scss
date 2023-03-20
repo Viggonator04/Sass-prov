@@ -1,0 +1,16 @@
+@function textstyle($fonts){
+   
+    @return $fonts*2; 
+}
+
+
+
+@function textcolor($bgcolor){
+    
+    @if (lightness($bgcolor)< 50)
+    {
+        @return black;}
+    @else{
+        @return white;
+    }
+}
